@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: about
 title: About
 permalink: /
 subtitle: <a href='#'>Eurecat Technology Centre</a> Barcelona, Spain. <a href='#'>University of Malaga</a> Malaga, Spain.
