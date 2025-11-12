@@ -6,7 +6,7 @@ subtitle: <a href='#'>Eurecat Technology Centre</a> Barcelona, Spain. <a href='#
 
 profile:
   align: right
-  image: https://avatars.githubusercontent.com/u/19194763?v=4
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Ada Byron Research Building</p>
