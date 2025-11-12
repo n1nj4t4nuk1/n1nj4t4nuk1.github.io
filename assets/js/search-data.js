@@ -142,13 +142,6 @@ ninja.data = [{
           window.open("https://github.com/n1nj4t4nuk1", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
@@ -184,11 +177,11 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=19rAzcMAAAAJ", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
+        id: 'social-x',
+        title: 'X',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://twitter.com/n1nj4t4nuk1", "_blank");
         },
       },{
       id: 'light-theme',
