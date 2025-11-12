@@ -1,12 +1,12 @@
 ---
-layout: about
+layout: About
 title: About
 permalink: /
 subtitle: <a href='#'>Eurecat Technology Centre</a> Barcelona, Spain. <a href='#'>University of Malaga</a> Malaga, Spain.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: https://avatars.githubusercontent.com/u/19194763?v=4
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Ada Byron Research Building</p>
