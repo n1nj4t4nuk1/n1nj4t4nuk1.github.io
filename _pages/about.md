@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Eurecat Technology Centre</a> Barcelona, Spain. <a href='#'>University of Malaga</a> Malaga, Spain.
+subtitle: <a href='https://eurecat.org/home/en/'>Eurecat Technology Centre</a> Barcelona, Spain. <a href='https://www.uma.es/'>University of Malaga</a> Malaga, Spain.
 
 profile:
   align: right
