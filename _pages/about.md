@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>Eurecat Technology Centre</a> Barcelona, Spain. <a href='#'>University of Malaga</a> Malaga, Spain.
 
 profile:
   align: right
