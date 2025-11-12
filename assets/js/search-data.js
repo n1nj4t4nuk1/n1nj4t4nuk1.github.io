@@ -71,16 +71,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-the-new-personal-website-is-now-online-featuring-my-publications-projects-and-academic-information-a-centralized-space-to-share-my-work-in-cybersecurity-and-cyber-intelligence",
+          title: 'The new personal website is now online, featuring my publications, projects, and academic...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
