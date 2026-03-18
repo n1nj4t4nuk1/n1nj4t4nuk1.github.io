@@ -72,6 +72,11 @@ ninja.data = [{
           description: "Server-side file compression service",
           section: "Projects",handler: () => {
               window.location.href = "/projects/collapse/";
+            },},{id: "projects-deepfinder",
+          title: 'Deepfinder',
+          description: "Search attributes in nested dict/list structures using dot-path syntax",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/deepfinder/";
             },},{id: "projects-maruja",
           title: 'Maruja',
           description: "Docker container packet sniffer",
