@@ -67,22 +67,7 @@ ninja.data = [{
             },},{id: "news-the-new-personal-website-is-now-online-featuring-my-publications-projects-and-academic-information-a-centralized-space-to-share-my-work-in-cybersecurity-and-cyber-intelligence",
           title: 'The new personal website is now online, featuring my publications, projects, and academic...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
+          section: "News",},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -112,6 +97,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-collapse",
+          title: 'Collapse',
+          description: "Server-side file compression service",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/collapse/";
+            },},{id: "projects-maruja",
+          title: 'Maruja',
+          description: "Docker container packet sniffer",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/maruja/";
+            },},{id: "projects-mongoexport",
+          title: 'MongoExport',
+          description: "Incrementally export MongoDB collections",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mongoexport/";
             },},{
         id: 'social-email',
         title: 'email',
