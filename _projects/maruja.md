@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Maruja
+description: Docker container packet sniffer
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: working
 giscus_comments: true
 ---
 
