@@ -82,6 +82,11 @@ ninja.data = [{
           description: "Search attributes in nested dict/list structures using dot-path syntax",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deepfinder/";
+            },},{id: "projects-deepfinderjs",
+          title: 'DeepfinderJS',
+          description: "Search attributes in nested dict/list structures using dot-path syntax",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/deepfinder_js/";
             },},{id: "projects-kagami",
           title: 'Kagami',
           description: "GitHub Action to mirror a repository to another git system",
