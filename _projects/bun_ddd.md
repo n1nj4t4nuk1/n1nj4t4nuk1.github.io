@@ -4,7 +4,7 @@ title: Bun DDD
 description: Bun template structured with DDD and CQRS principles
 img: assets/img/7.jpg
 redirect: https://github.com/n1nj4t4nuk1/bun-ddd-skeleton
-importance: 3
+importance: 5
 category: working
 ---
 
