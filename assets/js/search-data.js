@@ -67,7 +67,12 @@ ninja.data = [{
             },},{id: "news-the-new-personal-website-is-now-online-featuring-my-publications-projects-and-academic-information-a-centralized-space-to-share-my-work-in-cybersecurity-and-cyber-intelligence",
           title: 'The new personal website is now online, featuring my publications, projects, and academic...',
           description: "",
-          section: "News",},{id: "projects-collapse",
+          section: "News",},{id: "projects-bun-ddd",
+          title: 'Bun DDD',
+          description: "Bun template structured with DDD and CQRS principles",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bun_ddd/";
+            },},{id: "projects-collapse",
           title: 'Collapse',
           description: "Server-side file compression service",
           section: "Projects",handler: () => {
@@ -77,6 +82,11 @@ ninja.data = [{
           description: "Search attributes in nested dict/list structures using dot-path syntax",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deepfinder/";
+            },},{id: "projects-kagami",
+          title: 'Kagami',
+          description: "GitHub Action to mirror a repository to another git system",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/kagami/";
             },},{id: "projects-maruja",
           title: 'Maruja',
           description: "Docker container packet sniffer",
@@ -87,6 +97,11 @@ ninja.data = [{
           description: "Incrementally export MongoDB collections",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mongoexport/";
+            },},{id: "projects-python-ddd",
+          title: 'Python DDD',
+          description: "FastAPI template structured with DDD and CQRS principles",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/python_ddd/";
             },},{
         id: 'social-email',
         title: 'email',
