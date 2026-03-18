@@ -67,7 +67,12 @@ ninja.data = [{
             },},{id: "news-the-new-personal-website-is-now-online-featuring-my-publications-projects-and-academic-information-a-centralized-space-to-share-my-work-in-cybersecurity-and-cyber-intelligence",
           title: 'The new personal website is now online, featuring my publications, projects, and academic...',
           description: "",
-          section: "News",},{id: "projects-maruja",
+          section: "News",},{id: "projects-collapse",
+          title: 'Collapse',
+          description: "Server-side file compression service",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/collapse/";
+            },},{id: "projects-maruja",
           title: 'Maruja',
           description: "Docker container packet sniffer",
           section: "Projects",handler: () => {
