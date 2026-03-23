@@ -79,29 +79,19 @@
       "summary": "The paper proposes a framework that uses digital twins to emulate adaptive cyber adversaries in industrial IIoT control networks. The approach creates a virtual replica of the industrial system where auto‑ mated attackers, driven by reinforcement learning, interact with the environment and adapt their strategies to identify and exploit critical nodes. By combining system modeling with structural analysis and adversarial learning, the framework enables the generation of realistic and dynamic attack scenarios without impacting real industrial infrastructure. This environment can be used to evaluate defensive mechanisms, analyze sys‑ tem resilience, and support proactive cybersecurity testing in critical industrial networks"
     }
   ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
       "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Japanese",
       "fluency": "Fluent",
       "icon": ""
     }
