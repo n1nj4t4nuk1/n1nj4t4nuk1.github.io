@@ -10,13 +10,13 @@
   },
   "work": [
     {
-      "name": "NicsLab",
-      "position": "Professor of Theoretical Physics",
+      "name": "NicsLab - Research Group",
+      "position": "Cybersecurity Researcher",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
+      "startDate": "2023-01-01",
       "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "summary": "Research in cybersecurity with a strong emphasis on Cyber Threat Intelligence and Adversary Emulation applied to Critical Infrastructures.",
+      "highlights": ["Cyber Threat Intelligence", "Adversary Emulation", "Critical Infrastructures"]
     }
   ],
   "volunteer": [
