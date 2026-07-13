@@ -7,7 +7,7 @@ authors:
   - Caubet, Juan
   - Román, Rodrigo
 venue: Computer Security, ESORICS 2025, Springer Nature Switzerland (Cham), pp. 423–442
-year: 2026
+year: 2025
 abbr: ESORICS 2025
 preview: springer.png
 selected: true
