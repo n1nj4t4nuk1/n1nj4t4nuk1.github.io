@@ -24,8 +24,9 @@ const { data: publications } = await useAsyncData('home-publications', () =>
     <!-- Hero -->
     <section class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 md:gap-14 items-start">
       <div class="space-y-5 max-w-prose">
-        <h1 class="!text-[3.25rem] md:!text-[3.75rem] font-serif">
-          Javier Parada
+        <span class="eyebrow">Cybersecurity Researcher · PhD Candidate</span>
+        <h1 class="!text-[3.25rem] md:!text-[4.25rem] font-serif !leading-[1.05]">
+          Javier <span class="italic accent-text">Parada</span>
         </h1>
         <p class="soft text-lg leading-relaxed">
           <a href="https://eurecat.org/home/en/" target="_blank" rel="noopener">Eurecat Technology Centre</a> · Barcelona, Spain.
@@ -63,12 +64,15 @@ const { data: publications } = await useAsyncData('home-publications', () =>
       </div>
 
       <figure class="md:w-64 mx-auto md:mx-0">
-        <img
-          src="/img/prof_pic.jpg"
-          alt="Javier Parada"
-          class="w-full aspect-square object-cover rounded-sm"
-        />
-        <figcaption class="text-xs muted text-center mt-3 leading-relaxed">
+        <div class="relative">
+          <div class="absolute -inset-2 rounded-2xl surface-tint border hairline -z-10" />
+          <img
+            src="/img/prof_pic.jpg"
+            alt="Javier Parada"
+            class="w-full aspect-square object-cover rounded-xl border hairline"
+          />
+        </div>
+        <figcaption class="text-xs muted text-center mt-5 leading-relaxed">
           Ada Byron Research Institute<br />
           NicsLab Research Group<br />
           Malaga, Spain

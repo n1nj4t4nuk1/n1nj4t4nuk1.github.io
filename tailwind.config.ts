@@ -13,17 +13,18 @@ export default {
     extend: {
       colors: {
         ink: {
-          DEFAULT: '#1a1a1a',
-          soft: '#4a4a4a',
-          mute: '#8a8a8a',
+          DEFAULT: '#1a1613',
+          soft: '#4a4139',
+          mute: '#8a8176',
         },
         paper: {
-          DEFAULT: '#fafaf7',
-          soft: '#f2f2ec',
+          DEFAULT: '#f5f0e8',
+          soft: '#ebe3d5',
+          tint: '#faf5ec',
         },
         accent: {
-          DEFAULT: '#b91c1c',
-          soft: '#dc2626',
+          DEFAULT: '#c15f3c',
+          soft: '#dc815c',
         },
       },
       fontFamily: {
@@ -38,9 +39,9 @@ export default {
       typography: () => ({
         DEFAULT: {
           css: {
-            '--tw-prose-body': 'rgb(38 38 38)',
-            '--tw-prose-headings': 'rgb(23 23 23)',
-            '--tw-prose-links': '#b91c1c',
+            '--tw-prose-body': 'rgb(74 65 57)',
+            '--tw-prose-headings': 'rgb(26 22 19)',
+            '--tw-prose-links': '#c15f3c',
             maxWidth: 'none',
           },
         },
