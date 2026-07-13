@@ -1,18 +1,12 @@
 <script setup lang="ts">
 const nav = [
-  { label: 'about', to: '/' },
-  { label: 'publications', to: '/publications' },
-  { label: 'projects', to: '/projects' },
-  { label: 'cv', to: '/cv' },
-  { label: 'news', to: '/news' },
-  { label: 'blog', to: '/blog' },
+  { label: 'About', to: '/' },
+  { label: 'Publications', to: '/publications' },
+  { label: 'Projects', to: '/projects' },
+  { label: 'CV', to: '/cv' },
+  { label: 'News', to: '/news' },
+  { label: 'Blog', to: '/blog' },
 ]
-
-const colorMode = useColorMode()
-const isDark = computed(() => colorMode.value === 'dark')
-const toggleTheme = () => {
-  colorMode.preference = isDark.value ? 'light' : 'dark'
-}
 </script>
 
 <template>
@@ -37,19 +31,6 @@ const toggleTheme = () => {
         </NuxtLink>
       </nav>
 
-      <div class="flex items-center gap-2">
-        <button
-          type="button"
-          class="p-2 rounded-full hover:bg-[rgb(var(--bg-soft))] transition-colors"
-          :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
-          @click="toggleTheme"
-        >
-          <Icon
-            :name="isDark ? 'lucide:sun' : 'lucide:moon'"
-            class="w-5 h-5 text-[rgb(var(--fg-soft))]"
-          />
-        </button>
-      </div>
     </div>
 
     <nav class="md:hidden container-page flex items-center gap-5 pb-3 text-sm overflow-x-auto">

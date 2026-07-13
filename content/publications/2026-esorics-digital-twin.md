@@ -13,6 +13,7 @@ preview: springer.png
 selected: true
 isbn: 978-3-032-07894-0
 url: https://link.springer.com/chapter/10.1007/978-3-032-07895-7_21
+pdf: https://www.nics.uma.es/wp-content/papers/parada2025digital.pdf
 ---
 
 The number of threats in industrial ecosystems is increasing, especially in critical sectors, which have become a particularly lucrative target. These ecosystems have evolved into very complex interconnected systems, driven by the need to adapt to new digitalization and automation trends which extend their attack surface. In addition, the criticality of these systems makes them particularly difficult to test.

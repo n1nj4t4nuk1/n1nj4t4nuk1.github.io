@@ -34,4 +34,4 @@ The `about` page is `pages/index.vue`; the `cv` timeline is `pages/cv.vue`.
 
 - Colors and typography live in `tailwind.config.ts` and `assets/css/main.css`.
 - Serif: Cormorant Garamond. Sans: Inter. Mono: JetBrains Mono.
-- Light/dark mode via `@nuxtjs/color-mode`.
+- Light theme only.

@@ -88,9 +88,9 @@ const { data: publications } = await useAsyncData('home-publications', () =>
     <!-- News -->
     <section v-if="news && news.length" class="space-y-5">
       <div class="flex items-baseline justify-between">
-        <h2 class="!text-3xl">news</h2>
+        <h2 class="!text-3xl">News</h2>
         <NuxtLink to="/news" class="text-sm muted hover:text-[rgb(var(--fg))]">
-          view all →
+          View all →
         </NuxtLink>
       </div>
       <ul class="divide-y hairline border-y hairline">
@@ -108,9 +108,9 @@ const { data: publications } = await useAsyncData('home-publications', () =>
     <!-- Selected papers -->
     <section v-if="publications && publications.length" class="space-y-5">
       <div class="flex items-baseline justify-between">
-        <h2 class="!text-3xl">selected publications</h2>
+        <h2 class="!text-3xl">Selected Publications</h2>
         <NuxtLink to="/publications" class="text-sm muted hover:text-[rgb(var(--fg))]">
-          view all →
+          View all →
         </NuxtLink>
       </div>
       <PublicationList :items="publications" />

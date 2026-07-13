@@ -24,7 +24,7 @@ useSeoMeta({
       <p v-if="post.description" class="soft text-lg">{{ post.description }}</p>
     </header>
 
-    <div class="prose prose-neutral dark:prose-invert prose-lg max-w-none">
+    <div class="prose prose-neutral prose-lg max-w-none">
       <ContentRenderer :value="post" />
     </div>
   </article>

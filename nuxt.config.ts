@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
     '@nuxt/icon',
     '@vueuse/nuxt',
   ],
@@ -34,19 +33,9 @@ export default defineNuxtConfig({
     },
   },
 
-  colorMode: {
-    classSuffix: '',
-    preference: 'system',
-    fallback: 'light',
-    storageKey: 'jp-color-mode',
-  },
-
   content: {
     highlight: {
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
-      },
+      theme: 'github-light',
     },
     markdown: {
       anchorLinks: false,

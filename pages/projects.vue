@@ -25,7 +25,7 @@ const categories = computed(() => {
 <template>
   <div class="space-y-14">
     <header class="space-y-3 border-b hairline pb-6">
-      <h1>projects</h1>
+      <h1>Projects</h1>
       <p class="soft max-w-prose">
         A growing collection of open-source projects — templates, tools and utilities
         I've built over the years.
@@ -33,7 +33,7 @@ const categories = computed(() => {
     </header>
 
     <section v-for="[cat, items] in categories" :key="cat" class="space-y-6">
-      <h2 class="!text-3xl font-serif">{{ cat }}</h2>
+      <h2 class="!text-3xl font-serif capitalize">{{ cat }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <a
           v-for="p in items"

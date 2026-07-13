@@ -22,7 +22,7 @@ const grouped = computed(() => {
 <template>
   <div class="space-y-12">
     <header class="space-y-3 border-b hairline pb-6">
-      <h1>publications</h1>
+      <h1>Publications</h1>
       <p class="soft max-w-prose">
         Peer-reviewed research on cyber threat hunting, adversary emulation and threat
         intelligence for critical infrastructures — in reverse chronological order.

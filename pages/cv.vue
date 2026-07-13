@@ -50,7 +50,7 @@ const languages = [
   <div class="space-y-14">
     <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 border-b hairline pb-6">
       <div class="space-y-2">
-        <h1>cv</h1>
+        <h1>CV</h1>
         <p class="soft max-w-prose">
           A brief overview of my professional background — key experience, research
           interests and languages. Full detailed version available as PDF.
@@ -68,7 +68,7 @@ const languages = [
     </header>
 
     <section class="space-y-6">
-      <h2 class="!text-3xl">education</h2>
+      <h2 class="!text-3xl">Education</h2>
       <ol class="space-y-6">
         <li v-for="e in education" :key="e.role" class="grid grid-cols-1 md:grid-cols-[10rem_1fr] gap-4 md:gap-8">
           <div class="muted text-sm font-mono pt-1">{{ e.period }}</div>
@@ -84,7 +84,7 @@ const languages = [
     </section>
 
     <section class="space-y-6">
-      <h2 class="!text-3xl">experience</h2>
+      <h2 class="!text-3xl">Experience</h2>
       <ol class="space-y-6">
         <li v-for="e in experience" :key="e.role" class="grid grid-cols-1 md:grid-cols-[10rem_1fr] gap-4 md:gap-8">
           <div class="muted text-sm font-mono pt-1">{{ e.period }}</div>
@@ -100,7 +100,7 @@ const languages = [
     </section>
 
     <section class="space-y-6">
-      <h2 class="!text-3xl">languages</h2>
+      <h2 class="!text-3xl">Languages</h2>
       <ul class="divide-y hairline border-y hairline">
         <li v-for="l in languages" :key="l.name" class="py-3 flex justify-between text-sm">
           <span>{{ l.name }}</span>

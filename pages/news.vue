@@ -9,7 +9,7 @@ const { data: items } = await useAsyncData('news', () =>
 <template>
   <div class="space-y-10">
     <header class="space-y-3 border-b hairline pb-6">
-      <h1>news</h1>
+      <h1>News</h1>
       <p class="soft max-w-prose">Announcements, milestones and updates.</p>
     </header>
 

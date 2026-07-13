@@ -9,7 +9,7 @@ const { data: posts } = await useAsyncData('blog', () =>
 <template>
   <div class="space-y-10">
     <header class="space-y-3 border-b hairline pb-6">
-      <h1>blog</h1>
+      <h1>Blog</h1>
       <p class="soft max-w-prose">
         Occasional writing on threat hunting, adversary emulation and adjacent topics.
       </p>
