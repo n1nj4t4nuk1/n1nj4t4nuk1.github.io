@@ -5,7 +5,6 @@ const nav = [
   { label: 'Projects', to: '/projects' },
   { label: 'CV', to: '/cv' },
   { label: 'News', to: '/news' },
-  { label: 'Blog', to: '/blog' },
 ]
 </script>
 
