@@ -12,7 +12,7 @@ abbr: ESORICS 2025
 preview: springer.png
 selected: true
 isbn: 978-3-032-07894-0
-url: https://link.springer.com/chapter/10.1007/978-3-032-07895-7_21
+url: https://link.springer.com/chapter/10.1007/978-3-032-07894-0_22
 pdf: https://www.nics.uma.es/wp-content/papers/parada2025digital.pdf
 ---
 
