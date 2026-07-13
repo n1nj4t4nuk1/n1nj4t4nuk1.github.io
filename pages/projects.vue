@@ -8,6 +8,13 @@ const { data: projects } = await useAsyncData('all-projects', () =>
   queryContent('/projects').sort({ importance: -1 }).find(),
 )
 
+const categoryLabels: Record<string, string> = {
+  working: "Projects I'm working on",
+  maintaining: 'Projects I still maintain',
+  legacy: 'Legacy Projects',
+  other: 'Other',
+}
+
 const categories = computed(() => {
   const map = new Map<string, any[]>()
   for (const p of projects.value || []) {
@@ -15,7 +22,7 @@ const categories = computed(() => {
     if (!map.has(cat)) map.set(cat, [])
     map.get(cat)!.push(p)
   }
-  const order = ['working', 'legacy', 'other']
+  const order = ['working', 'maintaining', 'legacy', 'other']
   return [...map.entries()].sort(
     (a, b) => order.indexOf(a[0]) - order.indexOf(b[0]),
   )
@@ -33,7 +40,7 @@ const categories = computed(() => {
     </header>
 
     <section v-for="[cat, items] in categories" :key="cat" class="space-y-6">
-      <h2 class="!text-3xl font-serif capitalize">{{ cat }}</h2>
+      <h2 class="!text-3xl font-serif">{{ categoryLabels[cat] || cat }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <a
           v-for="p in items"
@@ -41,11 +48,12 @@ const categories = computed(() => {
           :href="p.url"
           target="_blank"
           rel="noopener"
-          class="group block p-5 border hairline rounded-sm hover:border-[rgb(var(--accent))] transition-colors bg-[rgb(var(--bg-soft))]/40"
+          class="group block p-6 card-warm"
         >
           <div class="flex items-start justify-between gap-3">
-            <h3 class="!text-xl font-serif leading-tight">
-              {{ p.title }}
+            <h3 class="!text-xl font-serif leading-tight flex items-center gap-2">
+              <span v-if="p.emoji" class="text-xl">{{ p.emoji }}</span>
+              <span>{{ p.title }}</span>
             </h3>
             <Icon
               name="lucide:arrow-up-right"
@@ -57,7 +65,7 @@ const categories = computed(() => {
             <span
               v-for="tag in p.stack"
               :key="tag"
-              class="text-[10px] font-mono uppercase tracking-wider muted px-1.5 py-0.5 border hairline rounded-sm"
+              class="text-[10px] font-mono uppercase tracking-wider muted px-1.5 py-0.5 border hairline rounded-full"
             >
               {{ tag }}
             </span>

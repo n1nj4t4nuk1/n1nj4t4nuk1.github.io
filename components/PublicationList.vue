@@ -58,7 +58,7 @@ const formatAuthors = (authors: string[]) =>
           <div class="flex flex-wrap gap-2 pt-1 text-xs">
             <span
               v-if="pub.abbr"
-              class="inline-flex items-center px-2 py-1 rounded-sm border hairline text-[rgb(var(--fg-soft))] font-mono"
+              class="inline-flex items-center px-2.5 py-1 rounded-full border hairline text-[rgb(var(--fg-soft))] font-mono"
             >
               {{ pub.abbr }}
             </span>
@@ -67,7 +67,7 @@ const formatAuthors = (authors: string[]) =>
               :href="pub.pdf"
               target="_blank"
               rel="noopener"
-              class="inline-flex items-center gap-1 px-2 py-1 rounded-sm border hairline text-[rgb(var(--fg-soft))] hover:text-[rgb(var(--accent))]"
+              class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full border hairline text-[rgb(var(--fg-soft))] hover:text-[rgb(var(--accent))] hover:border-[rgb(var(--accent))] transition-colors"
             >
               <Icon name="lucide:file-text" class="w-3 h-3" /> PDF
             </a>
@@ -76,7 +76,7 @@ const formatAuthors = (authors: string[]) =>
               :href="`https://doi.org/${pub.doi}`"
               target="_blank"
               rel="noopener"
-              class="inline-flex items-center gap-1 px-2 py-1 rounded-sm border hairline text-[rgb(var(--fg-soft))] hover:text-[rgb(var(--accent))]"
+              class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full border hairline text-[rgb(var(--fg-soft))] hover:text-[rgb(var(--accent))] hover:border-[rgb(var(--accent))] transition-colors"
             >
               <Icon name="lucide:external-link" class="w-3 h-3" /> DOI
             </a>
@@ -85,7 +85,7 @@ const formatAuthors = (authors: string[]) =>
               :href="pub.url"
               target="_blank"
               rel="noopener"
-              class="inline-flex items-center gap-1 px-2 py-1 rounded-sm border hairline text-[rgb(var(--fg-soft))] hover:text-[rgb(var(--accent))]"
+              class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full border hairline text-[rgb(var(--fg-soft))] hover:text-[rgb(var(--accent))] hover:border-[rgb(var(--accent))] transition-colors"
             >
               <Icon name="lucide:link" class="w-3 h-3" /> link
             </a>

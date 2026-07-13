@@ -24,8 +24,9 @@ const { data: publications } = await useAsyncData('home-publications', () =>
     <!-- Hero -->
     <section class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 md:gap-14 items-start">
       <div class="space-y-5 max-w-prose">
-        <h1 class="!text-[3.25rem] md:!text-[3.75rem] font-serif">
-          Javier Parada
+        <span class="eyebrow">Cybersecurity Researcher · PhD Candidate</span>
+        <h1 class="!text-[3.25rem] md:!text-[4.25rem] font-serif !leading-[1.05]">
+          Javier <span class="italic accent-text">Parada</span>
         </h1>
         <p class="soft text-lg leading-relaxed">
           <a href="https://eurecat.org/home/en/" target="_blank" rel="noopener">Eurecat Technology Centre</a> · Barcelona, Spain.
@@ -34,25 +35,24 @@ const { data: publications } = await useAsyncData('home-publications', () =>
 
         <div class="pt-1 space-y-4 text-[0.98rem] leading-[1.75]">
           <p>
-            I'm a cybersecurity researcher specializing in
-            <strong>Cyber Threat Hunting</strong>,
-            <strong>Adversary Emulation</strong> and
-            <strong>Threat Intelligence</strong>, with a strong focus on protecting
-            <strong>critical infrastructures</strong>. My research explores the proactive
-            detection and analysis of advanced adversaries targeting OT/ICS environments
-            by integrating threat intelligence and adversary emulation. Through frameworks
-            such as <strong>MITRE ATT&amp;CK</strong>, <strong>CALDERA</strong> and
-            <strong>Atomic Red Team</strong>, I systematically model attacker behaviors,
-            validate detection coverage and enhance defensive resilience.
+            Software Engineer and Cybersecurity Researcher from Spain, specializing in
+            <strong>Cyber Threat Intelligence</strong> and <strong>Adversary Emulation</strong>,
+            using offensive methodologies to simulate real-world attacks and improve
+            defensive capabilities against evolving threats.
           </p>
           <p>
-            My work also delves into the <strong>collection, enrichment and correlation
-            of threat data</strong> to generate actionable intelligence. By applying
-            natural language processing and graph-based models, I uncover adversary
-            infrastructure, campaigns and intent, contributing to intelligence-led
-            defense strategies. My Ph.D. research aims to strengthen situational
-            awareness and enable continuous hunting operations that improve the
-            detection and mitigation of sophisticated cyber threats in critical sectors.
+            My research explores the proactive detection and analysis of advanced adversaries
+            targeting <strong>OT/ICS environments</strong> by integrating threat intelligence
+            and adversary emulation. Through frameworks such as
+            <strong>MITRE ATT&amp;CK</strong>, <strong>CALDERA</strong> and
+            <strong>Atomic Red Team</strong>, I model attacker behaviors, validate detection
+            coverage and enhance defensive resilience.
+          </p>
+          <p>
+            I also work on the collection, enrichment and correlation of threat data to
+            generate actionable intelligence. By applying natural language processing and
+            graph-based models, I uncover adversary infrastructure, campaigns and intent,
+            contributing to intelligence-led defense strategies for critical sectors.
           </p>
         </div>
 
@@ -72,12 +72,15 @@ const { data: publications } = await useAsyncData('home-publications', () =>
       </div>
 
       <figure class="md:w-64 mx-auto md:mx-0">
-        <img
-          src="/img/prof_pic.jpg"
-          alt="Javier Parada"
-          class="w-full aspect-square object-cover rounded-sm"
-        />
-        <figcaption class="text-xs muted text-center mt-3 leading-relaxed">
+        <div class="relative">
+          <div class="absolute -inset-2 rounded-2xl surface-tint border hairline -z-10" />
+          <img
+            src="/img/prof_pic.jpg"
+            alt="Javier Parada"
+            class="w-full aspect-square object-cover rounded-xl border hairline"
+          />
+        </div>
+        <figcaption class="text-xs muted text-center mt-5 leading-relaxed">
           Ada Byron Research Institute<br />
           NicsLab Research Group<br />
           Malaga, Spain

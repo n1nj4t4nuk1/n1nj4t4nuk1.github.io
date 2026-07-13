@@ -1,8 +1,9 @@
 ---
 title: MongoExport
+emoji: 🍃
 description: Incrementally export MongoDB collections.
 url: https://pypi.org/project/mongoexport/
-category: working
-importance: 3
+category: maintaining
+importance: 60
 stack: [Python, MongoDB]
 ---

@@ -6,13 +6,16 @@
 
 @layer base {
   :root {
-    --bg: 250 250 247;
-    --bg-soft: 242 242 236;
-    --fg: 26 26 26;
-    --fg-soft: 74 74 74;
-    --fg-mute: 138 138 138;
-    --border: 226 226 219;
-    --accent: 185 28 28;
+    /* Warm cream palette inspired by Anthropic's editorial landing */
+    --bg: 245 240 232;         /* #F5F0E8 warm paper */
+    --bg-soft: 235 227 213;    /* #EBE3D5 deeper cream for surfaces */
+    --bg-tint: 250 245 236;    /* #FAF5EC almost-white highlight */
+    --fg: 26 22 19;            /* #1A1613 warm near-black */
+    --fg-soft: 74 65 57;       /* #4A4139 warm dark grey */
+    --fg-mute: 138 129 118;    /* #8A8176 warm mid grey */
+    --border: 216 205 186;     /* #D8CDBA warm hairline */
+    --accent: 193 95 60;       /* #C15F3C rust / terracotta */
+    --accent-soft: 220 129 92; /* #DC815C lighter coral */
   }
 
   html {
@@ -97,5 +100,32 @@ h3 {
 
   .surface {
     background-color: rgb(var(--bg-soft));
+  }
+
+  .surface-tint {
+    background-color: rgb(var(--bg-tint));
+  }
+
+  .accent-text {
+    color: rgb(var(--accent));
+  }
+
+  /* Anthropic-ish editorial hero label */
+  .eyebrow {
+    @apply inline-block text-[11px] font-mono uppercase tracking-[0.18em];
+    color: rgb(var(--accent));
+  }
+
+  /* Soft rounded card with cream surface */
+  .card-warm {
+    background-color: rgb(var(--bg-tint));
+    border: 1px solid rgb(var(--border));
+    @apply rounded-xl;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .card-warm:hover {
+    border-color: rgb(var(--accent));
+    transform: translateY(-2px);
   }
 }
