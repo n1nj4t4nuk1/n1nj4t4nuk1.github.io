@@ -23,10 +23,10 @@ Output written to `.output/public`. Deployed automatically to GitHub Pages on pu
 
 All editable content lives under `content/`:
 
-- `content/publications/` — one markdown file per paper
-- `content/projects/` — one markdown file per project
-- `content/news/` — one markdown file per news item
-- `content/blog/` — one markdown file per blog post
+- `content/publications/`, one markdown file per paper
+- `content/projects/`, one markdown file per project
+- `content/news/`, one markdown file per news item
+- `content/blog/`, one markdown file per blog post
 
 The `about` page is `pages/index.vue`; the `cv` timeline is `pages/cv.vue`.
 

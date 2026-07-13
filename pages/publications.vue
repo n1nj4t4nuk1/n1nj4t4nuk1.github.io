@@ -25,7 +25,7 @@ const grouped = computed(() => {
       <h1>Publications</h1>
       <p class="soft max-w-prose">
         Peer-reviewed research on cyber threat hunting, adversary emulation and threat
-        intelligence for critical infrastructures — in reverse chronological order.
+        intelligence for critical infrastructures, in reverse chronological order.
       </p>
     </header>
 

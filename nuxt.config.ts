@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Cybersecurity researcher — Cyber Threat Hunting, Adversary Emulation and Threat Intelligence for critical infrastructures.',
+            'Cybersecurity researcher, Cyber Threat Hunting, Adversary Emulation and Threat Intelligence for critical infrastructures.',
         },
         { name: 'author', content: 'Javier Parada' },
       ],

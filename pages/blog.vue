@@ -30,7 +30,7 @@ const { data: posts } = await useAsyncData('blog', () =>
     </ul>
 
     <p v-else class="muted italic">
-      Nothing published yet — come back soon.
+      Nothing published yet, come back soon.
     </p>
   </div>
 </template>

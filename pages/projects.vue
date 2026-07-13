@@ -27,7 +27,7 @@ const categories = computed(() => {
     <header class="space-y-3 border-b hairline pb-6">
       <h1>Projects</h1>
       <p class="soft max-w-prose">
-        A growing collection of open-source projects — templates, tools and utilities
+        A growing collection of open-source projects, templates, tools and utilities
         I've built over the years.
       </p>
     </header>

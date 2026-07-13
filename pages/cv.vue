@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'CV',
-  description: 'Curriculum Vitae — Javier Parada',
+  description: 'Curriculum Vitae, Javier Parada',
 })
 
 interface TimelineEntry {
@@ -28,7 +28,7 @@ const education: TimelineEntry[] = [
 const experience: TimelineEntry[] = [
   {
     role: 'Cybersecurity Researcher',
-    where: 'Eurecat — Technology Centre of Catalonia',
+    where: 'Eurecat, Technology Centre of Catalonia',
     location: 'Barcelona, Spain',
     period: 'present',
     bullets: [
@@ -52,7 +52,7 @@ const languages = [
       <div class="space-y-2">
         <h1>CV</h1>
         <p class="soft max-w-prose">
-          A brief overview of my professional background — key experience, research
+          A brief overview of my professional background, key experience, research
           interests and languages. Full detailed version available as PDF.
         </p>
       </div>

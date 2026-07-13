@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'About',
   description:
-    'Cybersecurity researcher — Cyber Threat Hunting, Adversary Emulation and Threat Intelligence for critical infrastructures.',
+    'Cybersecurity researcher, Cyber Threat Hunting, Adversary Emulation and Threat Intelligence for critical infrastructures.',
 })
 
 const socials = useSocials()
@@ -49,7 +49,7 @@ const { data: publications } = await useAsyncData('home-publications', () =>
             My work also delves into the <strong>collection, enrichment and correlation
             of threat data</strong> to generate actionable intelligence. By applying
             natural language processing and graph-based models, I uncover adversary
-            infrastructure, campaigns and intent — contributing to intelligence-led
+            infrastructure, campaigns and intent, contributing to intelligence-led
             defense strategies. My Ph.D. research aims to strengthen situational
             awareness and enable continuous hunting operations that improve the
             detection and mitigation of sophisticated cyber threats in critical sectors.
