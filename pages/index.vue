@@ -33,18 +33,16 @@ const { data: publications } = await useAsyncData('home-publications', () =>
           <a href="https://www.uma.es/" target="_blank" rel="noopener">University of Malaga</a> · Malaga, Spain.
         </p>
 
-        <div class="pt-1 space-y-4 text-[0.98rem] leading-[1.75]">
+        <div class="pt-1 text-[0.98rem] leading-[1.75]">
           <p>
             My field is <strong>Cyber Threat Intelligence</strong> (CTI): the discipline of
             collecting, analyzing and correlating data about adversaries, their tools and
             campaigns to turn raw signals into actionable knowledge that anticipates and
-            counters threats.
-          </p>
-          <p>
-            Within CTI, I focus on <strong>adversary emulation</strong> and the imitation of
-            <strong>APTs</strong> to reproduce real attacker behaviour and stress-test
-            defenses, on <strong>attack attribution</strong>, and on <strong>CTI sharing
-            systems</strong> that enable organizations to exchange intelligence at scale.
+            counters threats. Within CTI, I focus on <strong>adversary emulation</strong>
+            and the imitation of <strong>APTs</strong> to reproduce real attacker behaviour
+            and stress-test defenses, on <strong>attack attribution</strong>, and on
+            <strong>CTI sharing systems</strong> that enable organizations to exchange
+            intelligence at scale.
           </p>
         </div>
 
