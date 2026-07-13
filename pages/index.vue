@@ -34,24 +34,16 @@ const { data: publications } = await useAsyncData('home-publications', () =>
 
         <div class="pt-1 space-y-4 text-[0.98rem] leading-[1.75]">
           <p>
-            Software Engineer and Cybersecurity Researcher from Spain, specializing in
-            <strong>Cyber Threat Intelligence</strong> and <strong>Adversary Emulation</strong>,
-            using offensive methodologies to simulate real-world attacks and improve
-            defensive capabilities against evolving threats.
+            My field is <strong>Cyber Threat Intelligence</strong> (CTI): the discipline of
+            collecting, analyzing and correlating data about adversaries, their tools and
+            campaigns to turn raw signals into actionable knowledge that anticipates and
+            counters threats.
           </p>
           <p>
-            My research explores the proactive detection and analysis of advanced adversaries
-            targeting <strong>OT/ICS environments</strong> by integrating threat intelligence
-            and adversary emulation. Through frameworks such as
-            <strong>MITRE ATT&amp;CK</strong>, <strong>CALDERA</strong> and
-            <strong>Atomic Red Team</strong>, I model attacker behaviors, validate detection
-            coverage and enhance defensive resilience.
-          </p>
-          <p>
-            I also work on the collection, enrichment and correlation of threat data to
-            generate actionable intelligence. By applying natural language processing and
-            graph-based models, I uncover adversary infrastructure, campaigns and intent,
-            contributing to intelligence-led defense strategies for critical sectors.
+            Within CTI, I focus on <strong>adversary emulation</strong> and the imitation of
+            <strong>APTs</strong> to reproduce real attacker behaviour and stress-test
+            defenses, on <strong>attack attribution</strong>, and on <strong>CTI sharing
+            systems</strong> that enable organizations to exchange intelligence at scale.
           </p>
         </div>
 
