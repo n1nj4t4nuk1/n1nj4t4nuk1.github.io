@@ -25,4 +25,21 @@ export interface Photo {
  *     date: '2025-04-12',
  *   },
  */
-export const useGallery = (): Photo[] => []
+export const useGallery = (): Photo[] => [
+  {
+    title: 'Segovia',
+    image: 'https://live.staticflickr.com/65535/55370996460_520288a1c6_b.jpg',
+    link: 'https://www.flickr.com/photos/tanukifilm/55370996460/',
+    tags: ['segovia', 'spain', 'travel'],
+    caption: 'Segovia, Spain',
+    date: '2026-05-02',
+  },
+  {
+    title: 'Segovia',
+    image: 'https://live.staticflickr.com/65535/55370776374_0bf5d756cc_b.jpg',
+    link: 'https://www.flickr.com/photos/tanukifilm/55370776374/',
+    tags: ['segovia', 'spain', 'travel'],
+    caption: 'Segovia, Spain',
+    date: '2026-05-02',
+  },
+]
