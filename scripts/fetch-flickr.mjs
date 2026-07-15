@@ -29,6 +29,45 @@ const CONCURRENCY = Number(process.env.FLICKR_CONCURRENCY || 8)
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 
+/**
+ * Only tags in this set become filter chips on /gallery. Add new
+ * countries here as photos from new places are uploaded to Flickr.
+ */
+const COUNTRY_TAGS = new Set([
+  'spain',
+  'japan',
+  'france',
+  'portugal',
+  'italy',
+  'germany',
+  'uk',
+  'usa',
+  'mexico',
+  'brazil',
+  'china',
+  'korea',
+  'thailand',
+  'vietnam',
+  'india',
+  'morocco',
+  'greece',
+  'netherlands',
+  'belgium',
+  'switzerland',
+  'austria',
+  'poland',
+  'czechia',
+  'hungary',
+  'sweden',
+  'norway',
+  'denmark',
+  'finland',
+  'ireland',
+  'russia',
+  'turkey',
+  'egypt',
+])
+
 async function fetchText(url) {
   const res = await fetch(url, { headers: { 'user-agent': UA } })
   if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`)
@@ -110,19 +149,31 @@ async function fetchPhotostream() {
   const totalPages = Math.max(1, Math.ceil(total / perPage))
   console.log(`[flickr]   totalItems=${total} perPage=${perPage} pages=${totalPages}`)
 
-  const photos = extractPhotos(rootModel)
+  // Dedupe by id. Flickr sometimes returns page 1 for /pageN/ requests
+  // past the real last page, which used to produce duplicates.
+  const seen = new Map()
+  for (const p of extractPhotos(rootModel)) seen.set(p.id, p)
+
   for (let page = 2; page <= totalPages; page++) {
     const url = `https://www.flickr.com/photos/${USER}/page${page}/`
     console.log(`[flickr]   fetching page ${page}/${totalPages}`)
     const html = await fetchText(url)
     const model = extractModelExport(html)
     if (!model) {
-      console.warn(`[flickr]   could not parse page ${page}, skipping`)
-      continue
+      console.warn(`[flickr]   could not parse page ${page}, stopping`)
+      break
     }
-    photos.push(...extractPhotos(model))
+    const pagePhotos = extractPhotos(model)
+    const before = seen.size
+    for (const p of pagePhotos) if (!seen.has(p.id)) seen.set(p.id, p)
+    const added = seen.size - before
+    console.log(`[flickr]     +${added} new (total ${seen.size})`)
+    if (added === 0) {
+      console.log('[flickr]   page returned no new photos, stopping')
+      break
+    }
   }
-  return photos
+  return [...seen.values()]
 }
 
 function decodeEntities(s) {
@@ -203,11 +254,12 @@ async function main() {
   const merged = streamPhotos.map((p, i) => {
     const det = details[i] || { title: 'Untitled', tags: [] }
     const caption = det.title && det.title !== 'Untitled' ? det.title : undefined
+    const countryTags = det.tags.filter((t) => COUNTRY_TAGS.has(t))
     return {
       title: det.title,
       image: p.image,
       link: `https://www.flickr.com/photos/${USER}/${p.id}/`,
-      tags: det.tags,
+      tags: countryTags,
       caption,
       date: (p.dateTaken || '').slice(0, 10) || undefined,
     }
