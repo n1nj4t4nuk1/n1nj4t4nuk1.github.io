@@ -22,7 +22,7 @@ const { data: publications } = await useAsyncData('home-publications', () =>
 <template>
   <div class="space-y-20">
     <!-- Hero -->
-    <section class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 md:gap-14 items-start">
+    <section class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 md:gap-14 items-center">
       <div class="space-y-5 max-w-prose">
         <span class="eyebrow">Cybersecurity Researcher · PhD Candidate</span>
         <h1 class="!text-[3.25rem] md:!text-[4.25rem] font-serif !leading-[1.05]">
