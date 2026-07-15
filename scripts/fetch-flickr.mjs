@@ -22,7 +22,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const OUTPUT = resolve(__dirname, '..', 'public', 'gallery.json')
+const OUTPUT = resolve(__dirname, '..', 'data', 'gallery.json')
 
 const USER = process.env.FLICKR_USER || 'tanukifilm'
 const CONCURRENCY = Number(process.env.FLICKR_CONCURRENCY || 8)

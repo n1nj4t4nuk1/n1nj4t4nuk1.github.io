@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import galleryData from '~/data/gallery.json'
+
 interface Photo {
   title: string
   image: string
@@ -15,9 +17,7 @@ useSeoMeta({
 
 const PAGE_SIZE = 24
 
-const { data: photos } = await useAsyncData<Photo[]>('gallery', () =>
-  $fetch<Photo[]>('/gallery.json').catch(() => [] as Photo[]),
-)
+const photos = ref<Photo[]>(galleryData as Photo[])
 
 const activeTag = ref<string | null>(null)
 const visibleCount = ref(PAGE_SIZE)
@@ -86,7 +86,7 @@ onMounted(() => {
         "
         @click="setTag(null)"
       >
-        All · {{ (photos || []).length }}
+        All · {{ photos.length }}
       </button>
       <button
         v-for="tag in allTags"
@@ -149,7 +149,7 @@ onMounted(() => {
     </div>
 
     <p v-else class="muted italic">
-      <template v-if="(photos || []).length === 0">
+      <template v-if="photos.length === 0">
         No photos yet, come back soon.
       </template>
       <template v-else>
