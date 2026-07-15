@@ -8,7 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "prebuild": "node scripts/fetch-flickr.mjs",
+    "pregenerate": "node scripts/fetch-flickr.mjs",
+    "fetch:flickr": "node scripts/fetch-flickr.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",

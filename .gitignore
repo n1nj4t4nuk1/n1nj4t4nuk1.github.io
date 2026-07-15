@@ -25,3 +25,6 @@ logs
 
 # Editor
 .vscode/settings.json
+
+# Generated at build time by scripts/fetch-flickr.mjs
+public/gallery.json

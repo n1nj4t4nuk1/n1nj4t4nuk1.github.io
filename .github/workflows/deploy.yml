@@ -32,6 +32,8 @@ jobs:
         run: npm run generate
         env:
           NUXT_APP_BASE_URL: /
+          FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
+          FLICKR_NSID: ${{ secrets.FLICKR_NSID }}
 
       - name: Preserve CNAME
         run: cp CNAME .output/public/CNAME
