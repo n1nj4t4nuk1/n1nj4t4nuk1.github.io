@@ -39,39 +39,49 @@ const categories = computed(() => {
       </p>
     </header>
 
-    <section v-for="[cat, items] in categories" :key="cat" class="space-y-6">
-      <h2 class="!text-3xl font-serif">{{ categoryLabels[cat] || cat }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <a
-          v-for="p in items"
-          :key="p._path"
-          :href="p.url"
-          target="_blank"
-          rel="noopener"
-          class="group block p-6 card-warm"
-        >
-          <div class="flex items-start justify-between gap-3">
-            <h3 class="!text-xl font-serif leading-tight flex items-center gap-2">
-              <span v-if="p.emoji" class="text-xl">{{ p.emoji }}</span>
-              <span>{{ p.title }}</span>
-            </h3>
-            <Icon
-              name="lucide:arrow-up-right"
-              class="w-4 h-4 mt-2 muted group-hover:text-[rgb(var(--accent))] transition-colors"
-            />
-          </div>
-          <p class="text-sm soft mt-2 leading-relaxed">{{ p.description }}</p>
-          <div v-if="p.stack" class="flex flex-wrap gap-1.5 mt-4">
-            <span
-              v-for="tag in p.stack"
-              :key="tag"
-              class="text-[10px] font-mono uppercase tracking-wider muted px-1.5 py-0.5 border hairline rounded-full"
-            >
-              {{ tag }}
-            </span>
-          </div>
-        </a>
+    <section class="space-y-10">
+      <div class="space-y-2">
+        <h2 class="!text-4xl font-serif">Minor Projects</h2>
+        <p class="soft text-sm max-w-prose">
+          Small utilities, templates and side experiments. Major software projects
+          coming soon.
+        </p>
       </div>
+
+      <section v-for="[cat, items] in categories" :key="cat" class="space-y-6">
+        <h3 class="!text-2xl font-serif">{{ categoryLabels[cat] || cat }}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <a
+            v-for="p in items"
+            :key="p._path"
+            :href="p.url"
+            target="_blank"
+            rel="noopener"
+            class="group block p-6 card-warm"
+          >
+            <div class="flex items-start justify-between gap-3">
+              <h4 class="!text-xl font-serif leading-tight flex items-center gap-2">
+                <span v-if="p.emoji" class="text-xl">{{ p.emoji }}</span>
+                <span>{{ p.title }}</span>
+              </h4>
+              <Icon
+                name="lucide:arrow-up-right"
+                class="w-4 h-4 mt-2 muted group-hover:text-[rgb(var(--accent))] transition-colors"
+              />
+            </div>
+            <p class="text-sm soft mt-2 leading-relaxed">{{ p.description }}</p>
+            <div v-if="p.stack" class="flex flex-wrap gap-1.5 mt-4">
+              <span
+                v-for="tag in p.stack"
+                :key="tag"
+                class="text-[10px] font-mono uppercase tracking-wider muted px-1.5 py-0.5 border hairline rounded-full"
+              >
+                {{ tag }}
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
     </section>
   </div>
 </template>
