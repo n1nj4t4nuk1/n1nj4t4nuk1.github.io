@@ -2,7 +2,7 @@
 title: Kanjinary
 emoji: 🇯🇵
 description: Kanji learning web app.
-url: https://github.com/n1nj4t4nuk1/kanjinary
+url: https://github.com/otsobide/kanjinary
 category: legacy
 importance: 28
 stack: [Web, Japanese]
